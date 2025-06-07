@@ -689,7 +689,7 @@ section:nth-child(even) {
 
   .home-image {
     order: 1;
-    padding-left: 0;
+    padding-left: 40;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -697,9 +697,9 @@ section:nth-child(even) {
   }
 
   .home-image img {
-    width: 220px;
+    width: 250px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 15px;
     display: block;
     margin: 0 auto;
   }
