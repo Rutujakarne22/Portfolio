@@ -640,31 +640,32 @@ section:nth-child(even) {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .intro-text {
+    order: 2;
+    margin-top: 1rem;
   }
 
   .home-image {
-    width: 100%;
+    order: 1;
     display: flex;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .home-image img {
-    width: 65%;
-    max-width: 280px;
+    width: 180px;
     height: auto;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 12px;
   }
 
-  .intro-text h1,
+  .intro-text h1, 
   .intro-text h2,
-  .intro-text p {
-    margin: 0.5rem 0;
-  }
-
-  .btn {
-    margin-top: 1rem;
+  .intro-text .tagline {
+    text-align: center;
   }
 }
 
