@@ -233,8 +233,8 @@ section:nth-child(even) {
 
   .intro-text .btn {
     display: inline-block;
-    margin-top: 3rem;         /* push button further down */
-    margin-left: 150px;       /* move button slightly left */
+    margin-top: 3rem;        
+    margin-left: 150px;       
     padding: 0.3rem 1.2rem;
     background-color: #007acc;
     color: #fff;
@@ -248,15 +248,15 @@ section:nth-child(even) {
 
 
   .social-icons {
-    margin-top: 2.5rem;         /* more space from top */
+    margin-top: 2.5rem;        
     display: flex;
     gap: 2rem;
-    justify-content: center;    /* center horizontally */
-    padding-left: 20px;         /* adjust horizontal spacing */
+    justify-content: center;    
+    padding-left: 20px;         
   }
   
   .social-icons img {
-    width: 45px;                /* bigger icons */
+    width: 45px;                
     height: 45px;
     transition: transform 0.3s ease;
   }
@@ -360,8 +360,8 @@ section:nth-child(even) {
 
 .about-list {
   list-style-type: disc;
-  margin-left: 20px; /* Controls bullet indent */
-  padding-left: 0;   /* Prevents extra space */
+  margin-left: 20px; 
+  padding-left: 0;   
   font-size: 1.25rem;
   line-height: 1.5;
 }
@@ -445,9 +445,9 @@ section:nth-child(even) {
 /* Contact me section */
 
 #contact {
-  background-color: #f9f9f9; /* light grey background */
-  padding: 2rem 1rem;        /* some padding for spacing */
-  border-radius: 8px;        /* optional rounded corners */
+  background-color: #f9f9f9; 
+  padding: 2rem 1rem;        
+  border-radius: 8px;        
 }
 
 .contact-section {
@@ -635,9 +635,7 @@ section:nth-child(even) {
   }
 }
 /********************************************************************************/
-/* Your other CSS styles... */
 
-/* Add this at the very bottom */
 @media (max-width: 768px) {
   .home-section {
     flex-direction: column;
@@ -709,16 +707,16 @@ section:nth-child(even) {
 
 }
 
-
+/****************************************************************************************/
 @media (max-width: 768px) {
-  /* Reduce font size of About section content only */
   #about .about-intro,
   #about .about-goal,
   #about .about-list {
-    font-size: 1rem;   /* smaller than original 1.25rem */
-    line-height: 1.4;  /* adjust line height for readability */
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
   }
 }
+
 
 
 
