@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutuja's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Rutuja</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+ <!-- Home Section -->
+<section id="home" class="home-section">
+
+    <!-- Left Side: Text Content -->
+    <div class="intro-text">
+      <h1>Hello, I am</h1>
+      <h2>Rutuja Karne</h2>
+      <p class="tagline">-- Data Aspirant</p>
+  
+      <a href="Rutuja Karne Data Analyst Resume.pdf" download class="btn">Download Resume</a>
+
+  
+      <!-- Social Icons -->
+      <div class="social-links">
+        <a href="https://github.com/Rutujakarne22" target="_blank">
+          <img src="Images/git.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/rutuja-data-analyst/" target="_blank">
+          <img src="Images/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+    </div>
+  
+    <!-- Right Side: Profile Image -->
+    <div class="home-image">
+      <img src="Images/Rutujaphoto.jpeg"Rutuja Karne Photo">
+    </div>
+  
+  </section>
+  
+
+
+  
+  <!-- About Section -->
+<section id="about" class="section full-height">
+  <h2 class="section-heading">About Me</h2>
+  
+  <p class="about-intro">
+   Hi, I'm Rutuja Karne — a curious mind with a strong belief that data isn't just numbers, 
+   but stories waiting to be discovered. My journey into data analytics has been hands-on and insightful, 
+   driven by a passion for problem-solving and continuous learning. I work confidently with SQL, Power BI, 
+   Excel, and Python to uncover patterns, interpret trends, and turn raw data into meaningful insights that support smart decisions.
+  </p>
+
+  <div class="about-spacing"></div>
+
+  <p class="about-subheading"><strong>Key Highlights:</strong></p>
+  
+  <ul class="about-list">
+    <li>Completed internships in data analysis with hands-on experience in reporting, dashboard creation, and business insights</li>
+    <li>Hands-on with SQL, Power BI, Python, Excel for dashboards, automation & analysis</li>
+    <li>Experience working with supply chain, sales, and customer data</li>
+  </ul>
+
+  <div class="about-spacing"></div>
+
+  <p class="about-goal">
+    I'm looking to kickstart my career in a dynamic organization where I can grow, contribute to data-driven decisions, and keep evolving as a data professional.
+  </p>
+</section>
+
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="section full-height">
+    <h2 class="section-heading">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="Images/sql.png" alt="SQL" />
+        <h3>SQL</h3>
+        <p>Advanced data extraction,
+            cleaning, and analysis
+            using complex queries
+            and joins</p>
+      </div>
+      <div class="skill-card">
+        <img src="Images/Python.png" alt="Python" />
+        <h3>Python</h3>
+        <p>Data manipulation with
+            Pandas, visualization
+            with Matplotlib, and
+            statistical analysis</p>
+      </div>
+      <div class="skill-card">
+        <img src="Images/Excel.png" alt="Excel" />
+        <h3>Excel</h3>
+        <p>Advanced functions,
+            PivotTables, and data
+            analysis for reporting
+            and visualization</p>
+      </div>
+      <div class="skill-card">
+        <img src="Images/Powerbi.png" alt="Power BI" />
+        <h3>Power BI</h3>
+        <p>Interactive dashboard
+            creation, DAX formulas,
+            and data modeling for
+            business insights</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="section full-height">
+  <h2 class="section-heading">Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="Images/Consumer goods.png" alt="Project 1" />
+      <p><strong>Consumer Goods Ad-hoc Analysis</strong><br>
+        Conducted SQL-driven analysis for AtliQ Hardwares to address 10 real-world
+        business questions spanning sales, pricing, customer discounts, and
+        market trends & delivered insights.
+      </p>
+      <a class="btn open-project" data-project="1">See My Work</a>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Hospitality.png" alt="Project 2" />
+      <p><strong>AtliQ Hospitality Revenue Analysis</strong><br>
+        Performed data-driven analysis for a hotel chain to uncover revenue patterns,
+        identify underperforming locations, analyze seasonal trends, and provide insights.
+      </p>
+      <a class="btn open-project" data-project="2">See My Work</a>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Retail.png" alt="Project 3" />
+      <p><strong>Retail Supply Chain & Sales Analysis</strong><br>
+        Developed an end-to-end solution designed to extract business insights from Retail
+        sales data. Aims to analyze sales trends, shipping performance, and customer behavior.
+      </p>
+      <a class="btn open-project" data-project="3">See My Work</a>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Walmart sales.png" alt="Project 4" />
+      <p><strong>Walmart Sales & Trends Analysis</strong><br>
+        Designed SQL analysis for Walmart data to address 15 real-world business questions,
+        analyze sales trends, customer preferences, and sales performance.
+      </p>
+      <a class="btn open-project" data-project="4">See My Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="project-modal" class="modal">
+  <div class="modal-content" id="modal-project-content">
+    <span class="modal-close">&times;</span>
+    <!-- Content injected by JS -->
+  </div>
+</div>
+
+
+
+  <!-- Certificates Section -->
+<section id="certificates" class="section full-height">
+  <h2 class="section-heading">Certificates</h2>
+
+  <div class="certificates-grid">
+    <img src="Images/Nasscom.jpg" alt="Certificate 1" class="certificate-thumb" onclick="openCertModal(this.src)" />
+    <img src="Images/FSP.jpg" alt="Certificate 2" class="certificate-thumb" onclick="openCertModal(this.src)" />
+    <img src="Images/mysql bootcamp.jfif" alt="Certificate 3" class="certificate-thumb" onclick="openCertModal(this.src)" />
+    <img src="Images/Wadhwani.jpg" alt="Certificate 4" class="certificate-thumb" onclick="openCertModal(this.src)" />
+    <img src="Images/Accenture.jpg" alt="Certificate 5" class="certificate-thumb" onclick="openCertModal(this.src)" />
+    <img src="Images/hacker.png" alt="Certificate 6" class="certificate-thumb" onclick="openCertModal(this.src)" />
+  </div>
+
+  <!-- Separate Certificate Modal -->
+  <div id="certificateModal" class="certificate-modal">
+    <span class="certificate-close" onclick="closeCertModal()">&times;</span>
+    <img class="certificate-modal-img" id="certModalImg" src="" alt="Full Certificate" />
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="section full-height contact-section">
+  <h2 class="section-heading">Contact</h2>
+
+  <div class="contact-grid">
+    <!-- Email -->
+    <div class="contact-item">
+      <a href="mailto:rutujakarne826@gmail.com" target="_blank">
+        <img src="Images/emaill.png" alt="Email" class="contact-icon" />
+        <p>rutujakarne826@gmail.com</p>
+      </a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="contact-item">
+      <a href="https://github.com/rutujakarne22" target="_blank">
+        <img src="Images/git.png" alt="GitHub" class="contact-icon" />
+        <p>github.com/rutujakarne22</p>
+      </a>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="contact-item">
+      <a href="https://linkedin.com/in/rutuja-data-analyst/" target="_blank">
+        <img src="Images/linkedin.png" alt="LinkedIn" class="contact-icon" />
+        <p>linkedin.com/in/rutuja-data-analyst/</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 Rutuja Karne. All rights reserved.</p>
+</footer>
+
+
+<script>
+   function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+
+  function openCertModal(imgSrc) {
+    document.getElementById("certificateModal").style.display = "flex";
+    document.getElementById("certModalImg").src = imgSrc;
+  }
+
+  function closeCertModal() {
+    document.getElementById("certificateModal").style.display = "none";
+    document.getElementById("certModalImg").src = "";
+  }
+
+ const projectData = {
+    1: {
+      title: "Consumer Goods Ad-hoc Analysis",
+      description: `AtliQ Hardwares, a leading computer hardware producer in India with global operations, has been facing delays in strategic decision-making due to a lack of actionable insights from its current data systems. To overcome this, the management planned to expand the data analytics team and identified 10 ad-hoc business requests that required in-depth analysis.`,
+      tools: "SQL, Power BI",
+      objective: "To support AtliQ Hardware's management in making faster, data-driven strategic decisions by answering 10 real-world business questions through structured SQL analysis and actionable Power BI visualizations.",
+      keyDeliverables: `
+      <ul>
+        <li>Performed ad-hoc analysis using MySQL 
+          to solve 10 specific business requests involving joins, CTEs, window functions, and aggregations.</li>
+        <li>Developed a clean and interactive Power BI
+           dashboard to visualize insights across product categories, sales trends, and customer segments.</li>
+         <li> Generated insight reports highlighting key sales drivers, 
+          top-performing products, and recovery patterns post-decline.</li>
+           
+      </ul>
+    `,
+      insights: `
+      <ul>
+        <li>AtliQ Exclusive operates in eight countries across the APAC region.</li>
+        <li> Sales dropped to 0.4M in March 2020, likely due to the COVID-19  impact</li>
+         <li> Direct and distributor channels contribute 26.79% </li>
+         <li>Accessories saw the biggest growth from 2020 to 2021,
+ adding 34 new products.</li>
+           
+      </ul>
+    `,
+      approach: `
+      <ul>
+        <li>MySQL: Used to perform ad-hoc analysis by writing optimized SQL queries to answer 10 specific business
+           request using JOIN, CTE, RANK, and aggregation functions.</li>
+        <li>Created clear visuals for each request to make the insights easy 
+to understand and support data-driven decisions.</li>
+        
+           
+      </ul>
+    `,
+      impact: `
+      <ul>
+        <li>Helped AtliQ identify that
+           retailers contributed 70%+ to gross sales, focusing efforts on high-impact channels.</li>
+        <li>Enabled category-level performance monitoring, 
+          helping prioritize high-growth divisions and optimize future campaigns..</li>
+         
+           
+      </ul>
+    `,
+      images: ["Images/adhoc1.png", "Images/adhoc2.png","Images/adhoc3.png"],
+      github: "https://github.com/Rutujakarne22/Consumer_Goods_Ad-hoc_Analysis"
+    },
+
+
+    
+    2: {
+      title: "AtliQ Hospitality Revenue Analysis",
+      description: `AtliQ Grands, a fictional chain of five-star hotels across India. The company has been experiencing a decline in market share and revenue in the luxury/business hotel segment, primarily due to inefficient management decisions. This project leverages 
+      business intelligence and data analytics to support strategic decision-making and business revitalization..`,
+      tools: "Power BI , DAX",
+      objective: "To design a data-driven Power BI dashboard that helps AtliQ Grands identify revenue trends, optimize pricing strategies, \nand improve booking efficiency across properties by analyzing key hospitality metrics such as ADR, RevPAR, Occupancy %, and platform performance.",
+      keyDeliverables: `
+      <ul>
+        <li>Created an end-to-end data analysis solution
+          for AtliQ Hospitality focused on revenue performance across multiple hotels</li>
+        <li>Designed and deployed an interactive Power BI dashboards showing revenue, 
+          occupancy, and market share trends across cities and months.</li>
+         <li> Built a data model with fact and dimension tables to enable cross-filtering
+           by weekno, room type, and time period.</li>
+           
+      </ul>
+    `,
+      insights: `
+      <ul>
+        <li>Mumbai leads in revenue generation, contributing 668.6M, followed by Bangalore (420.4M), 
+          Hyderabad (325.2M), and Delhi (294.5).</li>
+        <li>Luxury rooms contributed the most to total revenue (61.61%), 
+          while the Business category contributed 38.39%.</li>
+         <li> Weekends outperform weekdays in both RevPAR (₹7,927 vs ₹7,101)
+           and occupancy (62.08% vs 56.0%)</li>
+         <li> AtliQ Exotica and AtliQ Palace are the top revenue-generating properties with over ₹300M each.</li>
+           
+      </ul>
+    `,
+      approach: `
+      <ul>
+        <li>Standardized and cleaned the data using Power Query for proper comparison and modeling.</li>
+        <li>Defined key metrics (Revenue, Occupancy %, RevPAR, ADR) to benchmark hotel performance.</li>
+         <li>Created DAX measures for dynamic KPIs and time intelligence.</li>
+           
+      </ul>
+    `,
+      impact: `
+      <ul>
+        <li>Enabled leadership to compare performance across hotels, spot underperforming cities, 
+          and make data-driven pricing and marketing decisions.</li>
+        <li>Improved revenue visibility and decision-making, 
+          contributing to a 10% increase in overall hotel revenue through data-driven insights.</li>
+         
+           
+      </ul>
+    `,
+      
+      images: ["Images/Hosdash.png","Images/Hosidash.png"],
+      github: "https://github.com/Rutujakarne22/Hospitality_Revenue_Analysis"
+    },
+
+
+    3: {
+      title: "Retail Supply Chain & Sales Analysis",
+      description: `The retail business lacked visibility into sales trends, discount impact, shipping delays, and return patterns, leading to inefficiencies in decision-making and supply chain operations. This project analyzed transaction record using Python, SQL Server, and Power BI to uncover key insights, optimize discount strategies, improve delivery performance, and support data-driven decisions.`,
+      tools: "SQL, Python, Power BI",
+      objective: "To analyze sales performance, supply chain efficiency, and customer behavior using Python, SQL Server, and Power BI in order to uncover operational gaps and improve business decision-making for a retail company.",
+      keyDeliverables: `
+      <ul>
+        <li>Cleaned and transformed 10K+ rows of retail transaction data using Python (Pandas, NumPy).</li>
+        <li>Built a relational database in SQL Server to store cleaned data and enable structured querying.</li>
+         <li>Designed and developed interactive Power BI dashboards to visualize sales, shipping, and return trends.</li>
+           
+      </ul>
+    `,
+      insights: `
+      <ul>
+        <li>Sales Performance: California, New York, and Texas contribute the highest sales,
+           while November & December see peak demand.</li>
+        <li>Profit & Discounts: High discounts (above 30%) reduce profitability, 
+          and the South region has the highest loss percentage (58.65%).</li>
+         <li>Shipping Performance: 68.35% of orders faced delays,
+           with Standard Class having the longest delivery time (41.84 days).</li>
+         <li>Customer Behavior: 8% of total sales were returned, with Office Supplies having the highest return rate.</li>
+           
+      </ul>
+    `,
+      approach: `
+      <ul>
+        <li>Addressed data quality issues: missing values, 
+          inconsistent date formats, and duplicate records using Python.</li>
+        <li>Tackled delayed shipping insights by calculating delivery duration and
+           benchmarking across shipping modes.</li>
+         <li>Identified return-prone categories and 
+          customer behavior patterns to suggest product and logistics strategies.</li>
+           
+      </ul>
+    `,
+      impact: `
+      <ul>
+        <li>Improved inventory planning accuracy by identifying seasonal sales trends 
+          and high-return product categories.</li>
+        <li>Supported cost-saving initiatives by 
+          uncovering that discounts above 30% significantly reduced profitability.</li>
+         
+           
+      </ul>
+    `,
+      images: ["Images/customer.png", "Images/sales.png","Images/shipping.png"],
+      github: "https://github.com/Rutujakarne22/Retail-Supply-Chain-Sales-Analysis"
+    },
+    4: {
+      title: "Walmart Sales & Trends Analysis",
+      description: `Walmart aims to enhance its business performance by analyzing sales data across multiple branches. The key challenges include understanding customer preferences, optimizing inventory and staffing, identifying high-performing product categories, and uncovering revenue trends. This project focuses on solving critical business questions using data-driven insights.`,
+      tools: "Python, MySQL",
+      objective: "To build an end-to-end data analysis solution that extracts meaningful insights from Walmart sales data, helping stakeholders make informed decisions related to sales trends, customer behavior, product performance, and branch-specific strategies.",
+      keyDeliverables: `
+      <ul>
+        <li>Cleaned and transformed walmart sales dataset using Python (Pandas, NumPy).</li>
+        <li>SQL queries to address 15 business-critical problems.</li>
+         <li>Insightful analysis covering sales trends, payment methods, customer ratings, profit margins,etc.</li>
+           
+      </ul>
+    `,
+      insights: `
+      <ul>
+        <li>Identified customer preferences for different payment methods across branches to 
+          support payment optimization.</li>
+        <li>Detected the busiest days and time shifts for each branch to improve staffing and inventory planning.</li>
+         <li>Identified the highest-rated product categories in each branch for targeted marketing.</li>
+         <li>Highlighted categories contributing the highest profit to support pricing and promotional decisions.</li>
+           
+      </ul>
+    `,
+      approach: `
+      <ul>
+        <li>Data Acquisition: Used Kaggle API to download Walmart sales data.</li>
+        <li>Data Cleaning & Preparation:
+
+           1)  Removed duplicates and missing values
+
+           2) Converted data types and formatted currency values
+
+           3)  Engineered features such as Total Sales, Profit, and time-based columns.</li>
+         <li>Database Integration: Loaded the cleaned dataset into MySQL using PyMySQL.</li>
+          <li>Analysis: Wrote complex SQL queries to answer specific business questions, covering sales trends, 
+            customer ratings, and payment behaviors.</li> 
+      </ul>
+    `,
+      impact: `
+      <ul>
+        <li>Identified Sundays as the busiest day for several branches, with up to 25% higher transaction volumes
+           compared to weekdays, enabling better staffing and inventory planning.</li>
+        <li>Discovered the most preferred payment methods per branch, helping Walmart
+           streamline payment processing systems to improve customer checkout experience.</li>
+         
+           
+      </ul>
+    `,  
+         
+      
+      images: ["Images/Walmart1.png", "Images/Walmart2.png", "Images/Walmart3.png"],
+      github: "https://github.com/Rutujakarne22/Walmart_Sales_Analysis"
+    }
+  };
+ const modal = document.getElementById("project-modal");
+  const modalContent = document.getElementById("modal-project-content");
+
+  let imageInterval;
+
+  document.querySelectorAll(".open-project").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const projectId = btn.getAttribute("data-project");
+      const data = projectData[projectId];
+
+      const hasMultipleImages = data.images && data.images.length > 1;
+      const imageContainerId = `project-images-${projectId}`;
+      let imagesHtml = `
+        <div class="modal-images">
+          <img id="${imageContainerId}" src="${data.images[0]}" alt="${data.title} image">
+        </div>`;
+
+      modalContent.innerHTML = `
+        <span class="modal-close">&times;</span>
+        <div class="modal-header">
+          <h2>${data.title}</h2>
+          <p>${data.description}</p>
+        </div>
+        <div class="modal-section">
+          <h3>Tools Used</h3>
+          <p>${data.tools}</p>
+        </div>
+        <div class="modal-section">
+          <h3>Objective</h3>
+          <p>${data.objective}</p>
+        </div>
+        <div class="modal-section">
+          <h3>Key Deliverables</h3>
+          <p>${data.keyDeliverables}</p>
+        </div>
+        <div class="modal-section">
+          <h3>Insights</h3>
+          <p>${data.insights}</p>
+        </div>
+        <div class="modal-section">
+          <h3>Approach / Challenges Solved</h3>
+          <p>${data.approach}</p>
+        </div>
+        <div class="modal-section">
+          <h3>Impact</h3>
+          <p>${data.impact}</p>
+        </div>
+        ${imagesHtml}
+        <div class="modal-section">
+          <a href="${data.github}" target="_blank" class="btn-github">View on GitHub</a>
+        </div>
+      `;
+
+      modalContent.querySelector(".modal-close").addEventListener("click", () => {
+        modal.style.display = "none";
+        clearInterval(imageInterval);
+      });
+
+      if (hasMultipleImages) {
+        let index = 0;
+        const imageEl = document.getElementById(imageContainerId);
+        imageInterval = setInterval(() => {
+          index = (index + 1) % data.images.length;
+          imageEl.src = data.images[index];
+        }, 3000);
+      }
+
+      modal.style.display = "flex";
+    });
+  });
+   
+
+</script>
+
+</body>
+</html>
