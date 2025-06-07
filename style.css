@@ -687,13 +687,15 @@ section:nth-child(even) {
     margin-right: 0;
   }
 
+  @media (max-width: 768px) {
   .home-image {
     order: 1;
-    padding: 40px 20px;
+    padding: 0; /* Reset extra padding */
+    margin: 0 auto 1.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-bottom: 1.5rem;
   }
 
   .home-image img {
@@ -703,6 +705,8 @@ section:nth-child(even) {
     display: block;
     margin: 0 auto;
   }
+}
+
 }
 
 
