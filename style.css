@@ -635,10 +635,14 @@ section:nth-child(even) {
   }
 }
 /********************************************************************************/
+/* Your other CSS styles... */
+
+/* Add this at the very bottom */
 @media (max-width: 768px) {
   .home-section {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 40px 20px;
   }
@@ -668,7 +672,7 @@ section:nth-child(even) {
 
   .intro-text .tagline {
     font-size: 1.2rem;
-    margin: 0 0 1rem;
+    margin-bottom: 1rem;
   }
 
   .intro-text .btn {
@@ -679,26 +683,27 @@ section:nth-child(even) {
   .social-links {
     gap: 2rem;
     margin-top: 1.5rem;
-    margin-right: 0;
     justify-content: center;
+    margin-right: 0;
   }
 
   .home-image {
     order: 1;
     padding-left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 1.5rem;
   }
 
   .home-image img {
-    width: 200px;
+    width: 220px;
     height: auto;
     border-radius: 12px;
+    display: block;
+    margin: 0 auto;
   }
 }
-
-
-
-
 
 
 
