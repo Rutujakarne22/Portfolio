@@ -689,7 +689,7 @@ section:nth-child(even) {
 
   .home-image {
     order: 1;
-    padding-left: 40;
+    padding-left: 100;
     display: flex;
     justify-content: center;
     width: 100%;
