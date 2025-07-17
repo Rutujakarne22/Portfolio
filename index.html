@@ -160,9 +160,9 @@
 
     <div class="project-card">
       <img src="Images/Walmart sales.png" alt="Project 4" />
-      <p><strong>Walmart Sales & Trends Analysis</strong><br>
-        Designed SQL analysis for Walmart data to address 15 real-world business questions,
-        analyze sales trends, customer preferences, and sales performance.
+      <p><strong>Promotional Performance Analysis </strong><br>
+        Performed promotion-focused analysis for a retail chain to evaluate campaign effectiveness, 
+        identify high-performing products and cities, and optimize future marketing strategies.
       </p>
       <a class="btn open-project" data-project="4">See My Work</a>
     </div>
@@ -410,49 +410,55 @@ to understand and support data-driven decisions.</li>
       github: "https://github.com/Rutujakarne22/Retail-Supply-Chain-Sales-Analysis"
     },
     4: {
-      title: "Walmart Sales & Trends Analysis",
-      description: `Walmart aims to enhance its business performance by analyzing sales data across multiple branches. The key challenges include understanding customer preferences, optimizing inventory and staffing, identifying high-performing product categories, and uncovering revenue trends. This project focuses on solving critical business questions using data-driven insights.`,
-      tools: "Python, MySQL",
-      objective: "To build an end-to-end data analysis solution that extracts meaningful insights from Walmart sales data, helping stakeholders make informed decisions related to sales trends, customer behavior, product performance, and branch-specific strategies.",
+      title: "Promotional Performance Analysis",
+      description: `AtliQ Mart, a large supermarket chain operating across South India, launched promotional campaigns during the Diwali 2023 and Sankranti 2024 festivals to boost product sales and brand visibility. Post-campaign, the Sales Director seeks a detailed yet quick performance analysis to understand which promotions performed well, which stores drove higher revenue, and how different product categories responded to these offers. This analysis is crucial for making data-driven decisions for upcoming promotional strategies.`,
+      tools: "Excel, MySQL",
+      objective: "The goal of this project is to analyze the effectiveness of AtliQ Mart’s festive promotional campaigns using Microsoft Excel and MySQL. The project focuses on evaluating revenue growth, unit sales uplift, store and city-level performance, and the impact of various promotion types. By combining dashboarding in Excel with SQL-based insights, the objective is to deliver actionable recommendations that help the business refine future campaigns and maximize ROI.",
       keyDeliverables: `
       <ul>
-        <li>Cleaned and transformed walmart sales dataset using Python (Pandas, NumPy).</li>
-        <li>SQL queries to address 15 business-critical problems.</li>
-         <li>Insightful analysis covering sales trends, payment methods, customer ratings, profit margins,etc.</li>
+        <li>Interactive Excel Dashboards showcasing promotional performance by store, promotion type, 
+        and product category with KPIs and slicers..</li>
+        <li>SQL Reports answering real business queries with performance metrics like 
+        Incremental Revenue %, ISU%, and campaign comparisons.</li>
+         <li>Business Presentation including key insights, visual storytelling, and actionable recommendations
+         for strategic decision-making.</li>
            
       </ul>
     `,
       insights: `
       <ul>
-        <li>Identified customer preferences for different payment methods across branches to 
-          support payment optimization.</li>
-        <li>Detected the busiest days and time shifts for each branch to improve staffing and inventory planning.</li>
-         <li>Identified the highest-rated product categories in each branch for targeted marketing.</li>
-         <li>Highlighted categories contributing the highest profit to support pricing and promotional decisions.</li>
+        <li>500 Cashback promotions led to the highest incremental revenue, especially during Diwali.</li>
+        <li>BOGOF drove the most incremental units sold, making it ideal for boosting volume.</li>
+         <li>Cities like Bengaluru and Hyderabad delivered the strongest store performance.</li>
+         <li>Personal Care showed limited response to promotions, indicating low effectiveness.</li>
            
       </ul>
     `,
       approach: `
       <ul>
-        <li>Data Acquisition: Used Kaggle API to download Walmart sales data.</li>
-        <li>Data Cleaning & Preparation:
+        <li>The project is divided into two parts:</li>
+        <li>1). Primary Analysis - Analyse the data and answer ad-hoc requests using MySQL.
+        
+2). Secondary Analysis – Create a dashboard with important metrics and visualizations
+using Excel</li>
 
-           1)  Removed duplicates and missing values
+         <li>1) Data Preparation:
+Imported and cleaned data from 4 CSV files (campaigns, products, stores, events) into
+Excel and MySQL.</li>
 
-           2) Converted data types and formatted currency values
+          <li>2)Excel Analysis & Dashboarding:
+Built interactive dashboards using Power Pivot, KPIs, measures, and slicers for visual
+insights.</li> 
 
-           3)  Engineered features such as Total Sales, Profit, and time-based columns.</li>
-         <li>Database Integration: Loaded the cleaned dataset into MySQL using PyMySQL.</li>
-          <li>Analysis: Wrote complex SQL queries to answer specific business questions, covering sales trends, 
-            customer ratings, and payment behaviors.</li> 
+      <li>1) SQL-Based Reporting:
+Used MySQL Workbench to answer critical business questions with query output.</li>
       </ul>
     `,
       impact: `
       <ul>
-        <li>Identified Sundays as the busiest day for several branches, with up to 25% higher transaction volumes
-           compared to weekdays, enabling better staffing and inventory planning.</li>
-        <li>Discovered the most preferred payment methods per branch, helping Walmart
-           streamline payment processing systems to improve customer checkout experience.</li>
+        <li>Identified that Diwali campaign boosted revenue by 18.3% compared to 
+        the pre-promotion period, validating promotion effectiveness..</li>
+        <li>Enabled the business to target high-ROI promotions and optimize low-performing categories using actionable insights.</li>
          
            
       </ul>
@@ -460,7 +466,7 @@ to understand and support data-driven decisions.</li>
          
       
       images: ["Images/Walmart1.png", "Images/Walmart2.png", "Images/Walmart3.png"],
-      github: "https://github.com/Rutujakarne22/Walmart_Sales_Analysis"
+      github: "https://github.com/Rutujakarne22/Promotional_Performance_Analysis"
     }
   };
  const modal = document.getElementById("project-modal");
